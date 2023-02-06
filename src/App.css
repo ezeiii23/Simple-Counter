@@ -1,0 +1,61 @@
+.App {
+  
+  background-color: #dd4b5e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcedef;
+  box-shadow: 0 4px 8px 0 #f8dbdf;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  width: 300px;
+  height: 400px;
+  padding: 40px;
+}
+
+button {
+  color: white;
+  background-color: #dd4b5e;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #852d38;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px 0  #852d38;
+}
+
+.count {
+  margin: 20px 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.count-value {
+  animation: count-up 0.5s ease-out;
+}
+
+@keyframes count-up {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
